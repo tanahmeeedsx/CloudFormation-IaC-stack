@@ -1,0 +1,19 @@
+# Create stack using terminal when your AWS CLI is configured (be careful about AWS regio):
+
+# Create
+aws cloudformation deploy \
+  --template-file cloudformation.yaml \
+  --stack-name bongodev-ubuntu-nginx-test \
+  --parameter-overrides Environment=test \
+  --region us-west-2
+
+
+# Delete
+aws cloudformation delete-stack \
+  --stack-name bongodev-ubuntu-nginx-test \
+  --region us-west-2
+
+# Confirm stack has finished deleting
+aws cloudformation wait stack-delete-complete \
+  --stack-name bongodev-ubuntu-nginx-test \
+  --region us-west-2
