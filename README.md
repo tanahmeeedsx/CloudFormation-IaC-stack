@@ -1,4 +1,4 @@
-# CloudFormation IaC Stack
+<h1 align="center">CloudFormation IaC Stack</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/AWS-CloudFormation-orange?style=for-the-badge&logo=amazonaws" alt="AWS CloudFormation">
